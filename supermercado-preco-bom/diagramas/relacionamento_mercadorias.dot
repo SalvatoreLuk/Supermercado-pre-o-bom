@@ -1,0 +1,15 @@
+digraph ER {
+ graph [label="Entrada de mercadorias | Relacionamentos essenciais", labelloc=t, fontsize=20, fontname="DejaVu Sans", bgcolor="#ffffff", pad="0.3", ranksep="0.8", nodesep="0.55", splines=polyline];
+ node [shape=box, style="rounded,filled", color="#86A2B6", fillcolor="#EAF3F8", fontname="DejaVu Sans", fontsize=15, margin="0.16,0.14"];
+ edge [color="#64748B", fontcolor="#475569", fontname="DejaVu Sans", fontsize=11, arrowsize=0.8];
+ Fornecedor [label="Fornecedor\nPK id_fornecedor"];
+ Nota_Fiscal [label="Nota_Fiscal\nPK id_nota\nFK id_fornecedor"];
+ Item_Nota [label="Item_Nota\nPK id_item_nota\nFK id_nota, id_produto, id_lote",fillcolor="#DBF1E7",color="#56A682"];
+ Produto [label="Produto\nPK id_produto"];
+ Lote [label="Lote\nPK id_lote\nFK id_produto"];
+ Fornecedor -> Nota_Fiscal [label="1 : N"];
+ Nota_Fiscal -> Item_Nota [label="1 : N"];
+ Produto -> Item_Nota [label="1 : N"];
+ Lote -> Item_Nota [label="1 : N"];
+ Produto -> Lote [label="1 : N"];
+}
