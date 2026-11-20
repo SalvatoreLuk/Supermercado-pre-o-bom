@@ -1,0 +1,11 @@
+TÍTULO PARA A SEÇÃO DESTAQUES
+Banco de Dados MySQL | Supermercado Preço Bom
+
+DESCRIÇÃO
+Projeto acadêmico desenvolvido em grupo durante o curso de Engenharia de Software. Criamos a modelagem relacional de um supermercado em MySQL, incluindo cadastro de produtos e fornecedores, notas fiscais, controle de estoque por lote, vendas e caixa.
+
+O script reúne 25 tabelas, chaves primárias e estrangeiras e consultas SQL para relatórios. Minha participação envolveu o estudo e a apresentação das tabelas Fornecedor, Nota_Fiscal e Item_Nota e seus relacionamentos.
+
+Tecnologias: MySQL | SQL | Modelagem de Banco de Dados
+
+Após publicar, cole o link real do repositório do GitHub no Destaques do LinkedIn.
